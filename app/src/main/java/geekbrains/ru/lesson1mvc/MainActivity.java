@@ -2,6 +2,7 @@ package geekbrains.ru.lesson1mvc;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements MainView, View.On
             }
         }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void setButtonText(int id, int value) {
         Button button = findViewById(id);
